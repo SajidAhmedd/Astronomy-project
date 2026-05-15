@@ -8,12 +8,9 @@ def send_email(message):
     username = "ahsajid38@gmail.com"
     password = "wpdcihxnwazawxsy"
 
-    receiver = "fforfish74@gmail.com"
+    receiver = "sajidahmed7154@gmail.com"
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL(host, port, context=context) as server:
         server.login(username, password)
         server.sendmail(username, receiver, message)
-
-
-send_email("Hello, how are you?")
